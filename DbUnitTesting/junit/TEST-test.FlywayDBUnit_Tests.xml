@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="IS-DEV-Win12-1" name="test.FlywayDBUnit_Tests" skipped="0" tests="5" time="0.858" timestamp="2017-11-02T11:52:23">
+<testsuite errors="0" failures="0" hostname="IS-DEV-Win12-1" name="test.FlywayDBUnit_Tests" skipped="0" tests="5" time="1.023" timestamp="2017-11-02T12:23:07">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="env.USERDOMAIN_ROAMINGPROFILE" value="IS-DEV-Win12-1" />
@@ -80,7 +80,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
     <property name="ant.version" value="Apache Ant(TM) version 1.10.1 compiled on February 2 2017" />
     <property name="java.class.path" value="C:\Users\mukesh\eclipse-workspace\flyway-sql\DbUnitTesting\bin;C:\Users\mukesh\eclipse-workspace\flyway-sql\DbUnitTesting\libs\junit.jar;C:\Users\mukesh\eclipse-workspace\flyway-sql\DbUnitTesting\libs\mysql-connector-java-6.0.6.jar;C:\Users\mukesh\eclipse-workspace\flyway-sql\DbUnitTesting\libs\commons-io-2.5.jar;C:\Users\mukesh\eclipse-workspace\flyway-sql\DbUnitTesting\libs\slf4j-api-1.7.25.jar;C:\Users\mukesh\eclipse-workspace\flyway-sql\DbUnitTesting\libs\slf4j-simple-1.6.1.jar;C:\Users\mukesh\eclipse-workspace\flyway-sql\DbUnitTesting\libs\org.apache.commons.pool.jar;C:\Users\mukesh\eclipse-workspace\flyway-sql\DbUnitTesting\libs\dbunit-2.5.4.jar;C:\Users\mukesh\.p2\pool\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant-launcher.jar;C:\Users\mukesh\.p2\pool\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant.jar;C:\Users\mukesh\.p2\pool\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant-junit.jar;C:\Users\mukesh\.p2\pool\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant-junit4.jar" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner test.FlywayDBUnit_Tests skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\mukesh\eclipse-workspace\flyway-sql\DbUnitTesting\junit\TEST-test.FlywayDBUnit_Tests.xml crashfile=C:\Users\mukesh\eclipse-workspace\flyway-sql\DbUnitTesting\junitvmwatcher1060298158019853305.properties propsfile=C:\Users\mukesh\eclipse-workspace\flyway-sql\DbUnitTesting\junit220021967084101754.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner test.FlywayDBUnit_Tests skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\mukesh\eclipse-workspace\flyway-sql\DbUnitTesting\junit\TEST-test.FlywayDBUnit_Tests.xml crashfile=C:\Users\mukesh\eclipse-workspace\flyway-sql\DbUnitTesting\junitvmwatcher4705847019921934959.properties propsfile=C:\Users\mukesh\eclipse-workspace\flyway-sql\DbUnitTesting\junit8881152081202516795.properties" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
     <property name="env.ST_INSTALL_PATH" value="C:\Program Files (x86)\HPE\Unified Functional Testing\" />
     <property name="env.LOGONSERVER" value="\\IS-DEV-Win12-1" />
@@ -119,14 +119,14 @@
     <property name="ant.project.invoked-targets" value="build,FlywayDBUnit_Tests" />
     <property name="env.PROCESSOR_LEVEL" value="6" />
   </properties>
-  <testcase classname="test.FlywayDBUnit_Tests" name="testCheckActualvsLoaded5" time="0.736" />
-  <testcase classname="test.FlywayDBUnit_Tests" name="testCheckXMLRowCount" time="0.014" />
-  <testcase classname="test.FlywayDBUnit_Tests" name="testCheckXMLDataNonNUllability2" time="0.01" />
-  <testcase classname="test.FlywayDBUnit_Tests" name="testCheckXMLDataNonNUllability3" time="0.011" />
+  <testcase classname="test.FlywayDBUnit_Tests" name="testCheckActualvsLoaded5" time="0.925" />
+  <testcase classname="test.FlywayDBUnit_Tests" name="testCheckXMLRowCount" time="0.013" />
+  <testcase classname="test.FlywayDBUnit_Tests" name="testCheckXMLDataNonNUllability2" time="0.009" />
+  <testcase classname="test.FlywayDBUnit_Tests" name="testCheckXMLDataNonNUllability3" time="0.01" />
   <testcase classname="test.FlywayDBUnit_Tests" name="testCheckXMLDataNonNUllability4" time="0.01" />
   <system-out><![CDATA[Entering getDataSet() method****
 Exiting getDataSet() method****
-rowCount :2
+rowCount :3
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

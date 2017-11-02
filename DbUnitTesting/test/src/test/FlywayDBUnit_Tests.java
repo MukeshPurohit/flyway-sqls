@@ -41,10 +41,12 @@ public class FlywayDBUnit_Tests extends TestCase {
 	
 	protected IDatabaseConnection getConnection() throws Exception {
 		Class driverClass = Class.forName("com.mysql.cj.jdbc.Driver");
+		//jdbcConnection = DriverManager.getConnection("jdbc:mysql://isg-linux.southeastasia.cloudapp.azure.com/flyway_schema_temp?autoReconnect=true&useSSL=false","root", "Kitchen@123");
 		jdbcConnection = DriverManager.getConnection(
-				"jdbc:mysql://isg-linux.southeastasia.cloudapp.azure.com/flyway_schema_temp?autoReconnect=true&useSSL=false",
+				"jdbc:mysql://isg-linux.southeastasia.cloudapp.azure.com/flyway_schema_dev?autoReconnect=true&useSSL=false",
 				"root", "Kitchen@123");
-		connection = new DatabaseConnection(jdbcConnection, "flyway_schema_temp");
+
+		connection = new DatabaseConnection(jdbcConnection, "flyway_schema_dev");
 		connection.getConfig().setProperty(DatabaseConfig.PROPERTY_DATATYPE_FACTORY, new MySqlDataTypeFactory());
 		connection.getConfig().setProperty(DatabaseConfig.PROPERTY_METADATA_HANDLER, new MySqlMetadataHandler());
 		return connection;
@@ -82,9 +84,9 @@ public class FlywayDBUnit_Tests extends TestCase {
 
 	@Test
 	public void testCheckXMLRowCount() throws Exception {
-		int rowCount = loadedDataSet.getTable("login").getRowCount();
+		int rowCount = loadedDataSet.getTable("person").getRowCount();
 		System.out.println("rowCount :" + rowCount);
-		assertEquals(2, rowCount);
+		assertEquals(3, rowCount);
 	 }
 
 	 @Test 
@@ -106,9 +108,8 @@ public class FlywayDBUnit_Tests extends TestCase {
 	 public void testCheckActualvsLoaded5() throws Exception {
 	        // Fetch database data after executing your code
 	        IDataSet databaseDataSet = getConnection().createDataSet();
-	        ITable actualTable = databaseDataSet.getTable("login");
-	        ITable filteredTable = DefaultColumnFilter.includedColumnsTable(actualTable, 
-	        		new String[]{"empcode","loginname","password","loginenabled"});
+	        ITable actualTable = databaseDataSet.getTable("person");
+	        //ITable filteredTable = DefaultColumnFilter.includedColumnsTable(actualTable,new String[]{"empcode","loginname","password","loginenabled"});
 	        
 	        // Load expected data from an XML dataset
 			FlatXmlDataSetBuilder builder = new FlatXmlDataSetBuilder();
@@ -116,9 +117,10 @@ public class FlywayDBUnit_Tests extends TestCase {
 			builder.setCaseSensitiveTableNames(false);
 			builder.setDtdMetadata(false);
 	        IDataSet expectedDataSet = new FlatXmlDataSetBuilder().build(new FileInputStream("InitialTest-data-ToBeLoaded.xml"));
-	        ITable expectedTable = expectedDataSet.getTable("login");
+	        ITable expectedTable = expectedDataSet.getTable("person");
 
 	        // Assert actual database table match expected table
-	        Assertion.assertEquals(expectedTable, filteredTable);
+	        //Assertion.assertEquals(expectedTable, filteredTable);
+	        Assertion.assertEquals(expectedTable, actualTable);
 	 }
 }

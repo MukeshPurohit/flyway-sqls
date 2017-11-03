@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+  <person ID="1" NAME="Mukesh"/>
+  <person ID="2" NAME="Zunaid"/>
+  <person ID="3" NAME="Rohit"/>
+  <schema_version installed_rank="1" version="1.1" description="Create person table" type="SQL" script="V1_1__Create_person_table.sql" checksum="1715188512" installed_by="flyway_dev" installed_on="2017-10-30 12:30:20.0" execution_time="19" success="1"/>
+  <schema_version installed_rank="2" version="1.2" description="Add people" type="SQL" script="V1_2__Add_people.sql" checksum="1414444620" installed_by="flyway_dev" installed_on="2017-10-30 12:30:20.0" execution_time="12" success="1"/>
+  <schema_version installed_rank="3" version="1.2.1" description="Add More people" type="SQL" script="V1_2_1__Add_More_people.sql" checksum="818015582" installed_by="flyway_dev" installed_on="2017-10-30 12:30:20.0" execution_time="5" success="1"/>
+</dataset>

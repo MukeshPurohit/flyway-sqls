@@ -86,7 +86,7 @@ public class FlywayDBUnit_Tests extends TestCase {
 	public void testCheckXMLRowCount() throws Exception {
 		int rowCount = loadedDataSet.getTable("person").getRowCount();
 		System.out.println("rowCount :" + rowCount);
-		assertEquals(3, rowCount);
+		assertEquals(12, rowCount);
 	 }
 
 	 @Test 

@@ -103,7 +103,7 @@ public class FlywayDBUnit_Tests extends TestCase {
 	 public void testCheckXMLDataNonNUllability4() throws Exception {
 		 assertNotNull(loadedDataSet); 
 	 }
-	 
+/*	 
 	 @Test 
 	 public void testCheckActualvsLoaded5() throws Exception {
 	        // Fetch database data after executing your code
@@ -123,4 +123,5 @@ public class FlywayDBUnit_Tests extends TestCase {
 	        //Assertion.assertEquals(expectedTable, filteredTable);
 	        Assertion.assertEquals(expectedTable, actualTable);
 	 }
+*/	 
 }

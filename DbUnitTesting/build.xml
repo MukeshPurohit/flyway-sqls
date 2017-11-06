@@ -72,7 +72,7 @@
 -->
     <target name="FlywayDBUnit_Tests">
         <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr" haltonfailure="yes">
+        <junit fork="yes" printsummary="withOutAndErr" haltonfailure="no">
             <formatter type="xml"/>
             <test name="test.FlywayDBUnit_Tests" todir="${junit.output.dir}"/>
             <jvmarg line="-ea"/>
